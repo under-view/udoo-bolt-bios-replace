@@ -10,7 +10,7 @@ build_coreboot() {
     git clone https://review.coreboot.org/coreboot.git "${coreboot_dir}" || return 1
     git -C "${coreboot_dir}" checkout 4.19 || return 1
     git -C "${coreboot_dir}" submodule update --init --checkout || return 1
-    make -C "${coreboot_dir}" crossgcc-x64 CPUS="${BUILD_THREADS}" || return 1
+    make -C "${coreboot_dir}" crossgcc-i386 CPUS="${BUILD_THREADS}" || return 1
   }
   
   cat < "${CDIR}/amd-zen-coreboot.cfg" >> "${coreboot_dir}/.config"
