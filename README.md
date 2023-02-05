@@ -24,5 +24,5 @@ On target machine
 
 ```
 # Be sure linux headers + gcc is installed
-$ ./build --flash-util
+$ ./build --flash-util coreboot/build/coreboot.rom
 ```
