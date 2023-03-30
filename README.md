@@ -8,7 +8,7 @@ Script used to build coreboot + seabios payload to replace udoo-bolt's BIOS firm
 
 ```sh
 # For a Debian-based system
-$ sudo apt install git build-essential gnat flex bison libncurses5-dev wget zlib1g-dev
+$ sudo apt install git build-essential gnat flex bison libncurses5-dev wget zlib1g-dev libssl-dev
 
 # For an Arch-based system
 $ sudo pacman -S base-devel gcc-ada flex bison ncurses wget zlib git
